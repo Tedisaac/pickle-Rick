@@ -4,7 +4,8 @@ plugins {
 }
 
 android {
-    compileSdk 32
+    compileSdk 33
+
 
     defaultConfig {
         applicationId "com.api.piclerick"
@@ -29,9 +30,16 @@ android {
     kotlinOptions {
         jvmTarget = '1.8'
     }
+    buildFeatures{
+        viewBinding true
+    }
 }
 
 dependencies {
+    def retrofitVersion = "2.9.0"
+    def moshiConverterVersion = "2.9.0"
+    def picassoVersion = "2.8"
+    def lifecycleVersion = "2.6.0-alpha02"
 
     implementation 'androidx.core:core-ktx:1.7.0'
     implementation 'androidx.appcompat:appcompat:1.5.1'
@@ -40,4 +48,14 @@ dependencies {
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.3'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
+
+    //retrofit
+    implementation "com.squareup.retrofit2:retrofit:$retrofitVersion"
+    //moshi
+    implementation "com.squareup.retrofit2:converter-moshi:$moshiConverterVersion"
+    //picasso
+    implementation "com.squareup.picasso:picasso:$picassoVersion"
+    //viewmodel and coroutines
+    implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:$lifecycleVersion"
+
 }

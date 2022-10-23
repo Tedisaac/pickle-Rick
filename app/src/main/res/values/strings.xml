@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">picleRick</string>
+    <string name="status_alive">Alive</string>
+    <string name="status_dead">Dead</string>
+    <string name="gender">Gender</string>
+    <string name="origin">Origin</string>
+    <string name="last_location">Last Known Location</string>
+    <string name="species">Species</string>
+    <string name="name">Name</string>
+    <string name="character_details">Character Details</string>
 </resources>
