@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">picleRick</string>
+    <string name="app_name">Pickle Rick</string>
     <string name="status_alive">Alive</string>
     <string name="status_dead">Dead</string>
     <string name="gender">Gender</string>
