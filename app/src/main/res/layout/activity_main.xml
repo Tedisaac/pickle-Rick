@@ -49,7 +49,6 @@
         android:layout_height="340dp"
         android:layout_margin="10dp"
         android:layout_marginTop="9dp"
-        android:backgroundTint="@color/light_green"
         app:cardCornerRadius="10dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -58,7 +57,8 @@
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:background="@drawable/cv_background">
 
             <ImageView
                 android:id="@+id/character_image"
@@ -74,10 +74,10 @@
                 android:id="@+id/status_color"
                 android:layout_width="20dp"
                 android:layout_height="20dp"
-                android:elevation="100dp"
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="14dp"
                 android:layout_marginBottom="16dp"
+                android:elevation="100dp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/character_image"
@@ -88,9 +88,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
-                android:text="@string/status_alive"
                 android:fontFamily="@font/sf_ui_bold"
-                android:textColor="@color/black"
+                android:text="@string/status_alive"
+                android:textColor="@color/white"
                 app:layout_constraintBottom_toBottomOf="@+id/status_color"
                 app:layout_constraintStart_toEndOf="@+id/status_color"
                 app:layout_constraintTop_toTopOf="@+id/status_color" />
@@ -100,9 +100,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="19dp"
-                android:text="@string/name"
                 android:fontFamily="@font/sf_ui_bold"
-                android:textColor="@color/black"
+                android:text="@string/name"
+                android:textColor="@color/white"
                 app:layout_constraintBottom_toBottomOf="@+id/status_text"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toTopOf="@+id/status_text" />
@@ -115,7 +115,6 @@
         android:layout_width="0dp"
         android:layout_height="70dp"
         android:layout_marginTop="20dp"
-        android:backgroundTint="@color/light_green"
         app:cardCornerRadius="10dp"
         app:cardElevation="10dp"
         app:layout_constraintEnd_toEndOf="@+id/image_card_view"
@@ -124,7 +123,8 @@
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:background="@drawable/cv_background">
 
             <TextView
                 android:id="@+id/species"
@@ -132,8 +132,9 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="14dp"
                 android:layout_marginTop="10dp"
-                android:text="@string/species"
                 android:fontFamily="@font/sf_ui_bold"
+                android:text="@string/species"
+                android:textColor="@color/white"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
@@ -143,9 +144,9 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
-                android:text="TextView"
                 android:fontFamily="@font/sf_ui_regular"
-                android:textColor="@color/black"
+                android:text="TextView"
+                android:textColor="@color/white"
                 app:layout_constraintEnd_toEndOf="@+id/species"
                 app:layout_constraintStart_toStartOf="@+id/species"
                 app:layout_constraintTop_toBottomOf="@+id/species" />
@@ -157,7 +158,6 @@
         android:layout_width="0dp"
         android:layout_height="70dp"
         android:layout_marginTop="20dp"
-        android:backgroundTint="@color/light_green"
         app:cardCornerRadius="10dp"
         app:cardElevation="10dp"
         app:layout_constraintEnd_toEndOf="@+id/cardView"
@@ -167,7 +167,8 @@
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:background="@drawable/cv_background">
 
             <TextView
                 android:id="@+id/gender"
@@ -175,8 +176,9 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="14dp"
                 android:layout_marginTop="10dp"
-                android:text="@string/gender"
                 android:fontFamily="@font/sf_ui_bold"
+                android:text="@string/gender"
+                android:textColor="@color/white"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
@@ -186,9 +188,9 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
-                android:text="TextView"
                 android:fontFamily="@font/sf_ui_regular"
-                android:textColor="@color/black"
+                android:text="TextView"
+                android:textColor="@color/white"
                 app:layout_constraintEnd_toEndOf="@+id/gender"
                 app:layout_constraintStart_toStartOf="@+id/gender"
                 app:layout_constraintTop_toBottomOf="@+id/gender" />
@@ -200,7 +202,6 @@
         android:layout_width="0dp"
         android:layout_height="70dp"
         android:layout_marginTop="20dp"
-        android:backgroundTint="@color/light_green"
         app:cardCornerRadius="10dp"
         app:cardElevation="10dp"
         app:layout_constraintEnd_toEndOf="@+id/cardView2"
@@ -210,7 +211,8 @@
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:background="@drawable/cv_background">
 
             <TextView
                 android:id="@+id/origin"
@@ -218,8 +220,9 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="14dp"
                 android:layout_marginTop="10dp"
-                android:text="@string/origin"
                 android:fontFamily="@font/sf_ui_bold"
+                android:text="@string/origin"
+                android:textColor="@color/white"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
@@ -229,9 +232,9 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
-                android:text="TextView"
                 android:fontFamily="@font/sf_ui_regular"
-                android:textColor="@color/black"
+                android:text="TextView"
+                android:textColor="@color/white"
                 app:layout_constraintEnd_toEndOf="@+id/origin"
                 app:layout_constraintStart_toStartOf="@+id/origin"
                 app:layout_constraintTop_toBottomOf="@+id/origin" />
@@ -242,7 +245,6 @@
         android:layout_width="0dp"
         android:layout_height="70dp"
         android:layout_marginTop="20dp"
-        android:backgroundTint="@color/light_green"
         app:cardCornerRadius="10dp"
         app:cardElevation="10dp"
         app:layout_constraintEnd_toEndOf="@+id/cardView3"
@@ -251,7 +253,8 @@
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:background="@drawable/cv_background">
 
             <TextView
                 android:id="@+id/last_location"
@@ -259,8 +262,9 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="14dp"
                 android:layout_marginTop="10dp"
-                android:text="@string/last_location"
                 android:fontFamily="@font/sf_ui_bold"
+                android:text="@string/last_location"
+                android:textColor="@color/white"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
@@ -270,9 +274,9 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
-                android:text="TextView"
                 android:fontFamily="@font/sf_ui_regular"
-                android:textColor="@color/black"
+                android:text="TextView"
+                android:textColor="@color/white"
                 app:layout_constraintEnd_toEndOf="@+id/last_location"
                 app:layout_constraintStart_toStartOf="@+id/last_location"
                 app:layout_constraintTop_toBottomOf="@+id/last_location" />
